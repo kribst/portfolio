@@ -1,0 +1,228 @@
+{% extends "main.html" %}
+{% load static %}
+{% block title %}Services{% endblock %}
+{% block content %}
+
+<style>
+    .bradcam_area {
+        position: relative;
+        width: 100%;
+        height: 400px; /* Ajuste la hauteur selon tes besoins */
+        background-image: url("{% static 'img/banner/bradcam.png' %}");
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+    }
+
+    .bradcam_area::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("{% static 'img/service/5.png' %}");
+        background-size: contain; /* ou cover, selon l'effet désiré */
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 1; /* Ajuste l'opacité selon tes préférences */
+        pointer-events: none; /* Permet d'interagir avec les éléments en dessous */
+    }
+
+    .bradcam_text {
+        position: relative;
+        z-index: 1; /* Assure que le texte soit au-dessus des images */
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 58px;
+        font-weight: bold;
+        text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
+        color: #fff;;
+    }
+</style>
+
+<div class="bradcam_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="bradcam_text">
+                    <h2>Excellence Technologique</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/ bradcam_area  -->
+
+
+ <!-- service_area start  -->
+    <div class="service_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="single_service text-center" style="border-radius: 5px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);" >
+                        <div class="icon">
+                            <img src="{% static 'img/svg_icon/6.svg' %}" alt="">
+                        </div>
+                        <h3>
+                           Administrateur Système
+                        </h3>
+                        <p>En tant qu'administrateur système, je garantis la sécurité, la performance et la fiabilité de vos infrastructures.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single_service text-center" style="border-radius: 5px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);" >
+                        <div class="icon">
+                            <img src="{% static 'img/svg_icon/1.svg' %}" alt="">
+                        </div>
+                        <h3>
+                                Conception Web et Mobile
+                        </h3>
+                        <p>Je crée des sites web et applications mobiles sur mesure, alliant esthétique, fonctionnalité et expérience utilisateur.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6' %}">
+                    <div class="single_service text-center" style="border-radius: 5px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);" >
+                        <div class="icon">
+                            <img src="{% static 'img/svg_icon/4.svg' %}" alt="">
+                        </div>
+                        <h3>
+                            Solution de Télécom
+                        </h3>
+                        <p>Je propose des solutions de télécommunications adaptées, garantissant connectivité, performance et service client de qualité.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single_service text-center" style="border-radius: 5px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);" >
+                        <div class="icon">
+                            <img src="{% static 'img/svg_icon/5.svg' %}" alt="">
+                        </div>
+                        <h3>
+                                Design
+                        </h3>
+                        <br/>
+                        <p>Je conçois des solutions de design sur mesure, alliant créativité, innovation et fonctionnalité pour sublimer vos projets.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- service_area end  -->
+
+
+
+  <!-- service  -->
+
+ <div class="service_products">
+
+        <div class="container">
+            <br>
+            <br>
+            <br>
+
+            <div class="service_wrap">
+                <div class="row align-items-center">
+                    <div class="col-md-6 col-lg-5">
+                        <div class="thumb">
+                            <img style="width: 500px; height: 650px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);" src="{% static 'img/service/linux1.jpg' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="service_text padding_left">
+                            <h3>Administration Système</h3>
+                            <p>Mon service d'administration système garantit le bon fonctionnement de vos systèmes. Surveillance, entretient et optimisation de vos <strong>PC</strong>, vos <strong>serveurs</strong> et <strong>bien d'autres</strong>, seront ma priorité absolue, vous garantissant ainsi à tout moment des performances et une sécurité optimales pour vos installations.
+</p>
+                            <p>Grâce à mon expertise en <strong>réseau</strong>, j'identifie et résous les problèmes avant qu'ils n'affectent vos opérations. Je personnalise des solutions adaptées à vos besoins, garantissant une connectivité transparente et des temps d'arrêt minimes pour l'ensemble de votre équipe.</p>
+                            <p>Mon approche proactive me permet d'anticiper les défis avant qu'ils ne surviennent. Je fournis des mises à jour et des rapports réguliers, vous tenant informé et habilité à prendre les meilleures décisions pour votre entreprise pendant que je m'occupe des détails techniques.</p>
+
+                            <p>Choisissez mon service d'administration système pour une tranquillité d'esprit totale. Avec moi, vous pouvez vous concentrer sur votre cœur de métier tandis que je veille à ce que vos systèmes soient sécurisés, efficaces et toujours prêts à soutenir votre croissance et votre réussite.</p>
+                            <a href="https://wa.me/+237698936955?text=Besoin%20d%27une%20assistance%20dans%20le%20système%20informatique" class="boxed-btn3-line" style="border-radius: 5px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);" >contactez-moi</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service_wrap">
+                <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-6">
+                                <div class="service_text ">
+                                    <h3>Développement De Logiciels</h3>
+
+                                    <p>Je conçois des applications conviviales qui rationalisent les processus et améliorent la productivité, me permettant ainsi d'atteindre mes objectifs sans effort.</p>
+
+                                    <p>Spécialisé dans diverses technologies, notamment Django et React.js, je garantis la modernité et l'efficacité des applications conçues. Je travaille en étroite collaboration avec vous pour comprendre vos besoins et vous proposer des solutions qui font vraiment la différence.</p>
+                                    <p>J'accorde la priorité à la qualité et à l'expérience utilisateur dans chaque projet. Mon processus de développement agile permet une flexibilité et des ajustements rapides, garantissant que mon logiciel évolue avec entreprise tout en répondant aux normes les plus élevées.</p>
+                                    <p>Mon engagement ne s'arrête pas à la livraison. Je fournis un support et une maintenance continus pour assurer le bon fonctionnement du logiciel. Cela garantit que mes applications restent à jour et fonctionnent de manière optimale à mesure que l'entreprise se développe.</p>
+                                    <p>Faites-moi savoir si vous avez besoin d'autres modifications !</p>
+
+                                    <a href="https://wa.me/+237698936955?text=Besoin%20de%20votre%20service%20dans%20la%20conception%20d%27une%20application" class="boxed-btn3-line" style="border-radius: 5px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);" >Contactez-moi</a>
+                                </div>
+                            </div>
+                    <div class="col-md-6 col-lg-6">
+                        <div class="thumb padding_left">
+                            <img src="{% static 'img/service/software.jpg' %}" alt="" style="width: 500px; height: 650px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);" >
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="service_wrap">
+                <div class="row align-items-center">
+                    <div class="col-md-6 col-lg-5">
+                        <div class="thumb">
+                            <img src="{% static 'img/service/telecom.jpg' %}" alt="" style="width: 500px; height: 650px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);" >
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="service_text padding_left">
+                            <h3>Solutions des télécommunications</h3>
+                            <p>Mes solutions en télécommunications offrent à votre entreprise des systèmes de communication rapides et fiables adaptés à vos besoins. Je connecte votre équipe de manière transparente, en garantissant une communication claire via des services voix, données et vidéo qui améliorent la collaboration.</p>
+                            <p>Grâce à mon expertise, j'installe et gère des systèmes de télécommunications avancés qui soutiennent votre croissance. Qu'il s'agisse de VoIP, de solutions mobiles ou de services haut débit, je veille à ce que vos connexions soient toujours solides et fiables pour votre entreprise.</p>
+                            <p>J'accorde la priorité à votre satisfaction grâce à une maintenance et un dépannage continus. Toujours prête à résoudre rapidement tout problème, garantissant ainsi que vos canaux de communication restent ouverts et que votre entreprise fonctionne sans accroc.</p>
+                            <p>Choisissez moi pour vos solutions de télécommunications pour un lieu de travail connecté et efficace. Je dote votre équipe d'outils de communication fiables, favorisant la collaboration et la croissance. Laissez-moi prendre soin de vos besoins en télécommunications pendant que vous vous concentrez sur le succès !</p>
+
+                            <a href="https://wa.me/+237698936955?text=Besoin%20d%27une%20assistance%20en%20le%20télécommunications" class="boxed-btn3-line" style="border-radius: 5px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);" >contactez-moi</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service_wrap">
+                <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-6">
+                                <div class="service_text ">
+                                    <h3>Mes Solutions Design</h3>
+
+                                    <p>Mes solutions de design offrent une approche créative et personnalisée pour donner vie à vos idées. Je comprends l'importance d'une identité visuelle forte et cohérente, et je travaille avec vous pour développer des concepts qui captivent et engagent votre audience.</p>
+                                    <p>Grâce à mon expertise, je crée des designs innovants pour divers supports, qu'il s'agisse de graphismes numériques, de branding ou de supports imprimés. Chaque projet est conçu sur mesure pour refléter l'essence de votre marque et atteindre vos objectifs de communication.</p>
+                                    <p>Talentueux, je collabore étroitement avec vous, analysant vos besoins spécifiques pour offrir les meilleures solutions esthétiques. Je reste à l'affût des dernières tendances du design, garantissant que votre projet se démarque dans un paysage visuel en constante évolution.</p>
+                                    <p>J'attache une grande importance à votre satisfaction avec un processus de révision ouvert et transparent. Toujours disponible pour ajuster et affiner les designs, s'assurant que le résultat final dépasse vos attentes.</p>
+                                    <p>Choisissez mes solutions de design pour transformer votre vision en réalité. Je vous aide à créer des expériences visuelles mémorables qui renforcent votre présence sur le marché. Laissez-moi prendre en charge vos besoins en design pendant que vous vous concentrez sur le développement de votre activité !</p>
+
+
+                                    <a href="https://wa.me/+237698936955?text=Bonjour,%20que%20désirez-vous%20?" class="boxed-btn3-line" style="border-radius: 5px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);" >Contactez-moi</a>
+                                </div>
+                            </div>
+                    <div class="col-md-6 col-lg-6">
+                        <div class="thumb padding_left">
+                            <img src="{% static 'img/service/techno.jpg' %}" alt="" style="width: 500px; height: 650px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);" >
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+  <!-- service_area  -->
+
+{% endblock %}

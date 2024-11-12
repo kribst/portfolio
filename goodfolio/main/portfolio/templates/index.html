@@ -1,0 +1,226 @@
+{% extends "main.html" %}
+{% load static %}
+{% block title %}Accueil{% endblock %}
+{% block content %}
+
+
+<!-- slider_area_start -->
+    <div class="slider_area">
+        <div class="single_slider  d-flex align-items-center slider_bg_1">
+            <div class="container">
+                <div class="row align-items-center position-relative">
+                    <div class="col-lg-9">
+                        <div class="slider_text">
+                            <h3 style="font-weight: 400; text-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);">ILASSI DJOBA<br>
+                                <span style="font-weight: 500; color: #DB9A64; text-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);">Ton Project Ma Priorité</span></h3>
+                        <a href="{% url 'work' %}" class="boxed-btn3-line" style="border-radius: 5px; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5)">Mes Travaux</a>
+                        </div>
+                    </div>
+                    <div class="my_img d-none d-lg-block">
+                        <img src="{% static 'img/about/my_img.png' %}" alt="" style="width: 350px; height: 900px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slider_area_end -->
+
+    <div class="download_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10">
+                    <div class="download_text">
+                        <h3 style="text-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5)">Transformez vos idées en réalité avec des solutions de premier ordre conçus spécialement pour vous !</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="download_left">
+                        <p>En tant qu'ingénieur spécialisé en administration système, réseau et télécom, je maîtrise la configuration d'équipements, le développement d'applications web et mobiles, ainsi que la retouche photo et la création de logos.</p>
+                        <p>Confiez-moi vos projets pour bénéficier de mon expertise, et n'hésitez pas à télécharger mon CV pour découvrir mes réalisations et compétences !</p>
+                        <a style="border-radius: 5px; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5)" href="{% url 'download_cv' %}" class="boxed-btn3-line">Télécharger le CV</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-1 col-md-6">
+                    <div class="progress_skills">
+                        <div class="single_progress">
+                            <div class="label d-flex justify-content-between">
+                                <span>Wireframing' %}</span>
+                                <span>90%</span>
+                            </div>
+                                <div class="progress">
+                                        <div class="progress-bar " role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                      </div>
+                        </div>
+                        <div class="single_progress">
+                                <div class="label d-flex justify-content-between">
+                                        <span>UI/UX</span>
+                                        <span>70%</span>
+                                    </div>
+                                <div class="progress">
+                                        <div class="progress-bar " role="progressbar" style="width: 70%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                      </div>
+                        </div>
+                        <div class="single_progress">
+                                <div class="label d-flex justify-content-between">
+                                        <span>Interaction design</span>
+                                        <span>65%</span>
+                                    </div>
+                                <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                      </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- service_area start  -->
+    <div class="service_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title mb-50">
+                        <h3 style="text-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5)">Mes Services</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="single_service text-center" style="border-radius: 5px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);" >
+                        <div class="icon">
+                            <img src="{% static 'img/svg_icon/6.svg' %}" alt="">
+                        </div>
+                        <h3>
+                         Administrateur système
+                        </h3>
+                        <p>En tant qu'administrateur système, je garantis la sécurité, la performance et la fiabilité de vos infrastructures.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single_service text-center" style="border-radius: 5px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);" >
+                        <div class="icon">
+                            <img src="{% static 'img/svg_icon/1.svg' %}" alt="">
+                        </div>
+                        <h3>
+                             Conception Web et Mobile
+                        </h3>
+                        <p>Je crée des sites web et applications mobiles sur mesure, alliant esthétique, fonctionnalité et expérience utilisateur.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6' %}">
+                    <div class="single_service text-center" style="border-radius: 5px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);" >
+                        <div class="icon">
+                            <img src="{% static 'img/svg_icon/4.svg' %}" alt="">
+                        </div>
+                        <h3>
+                            Solution de Télécom
+                        </h3>
+                        <p>Je propose des solutions de télécommunications adaptées, garantissant connectivité, performance et service client de qualité.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single_service text-center" style="border-radius: 5px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);" >
+                        <div class="icon">
+                            <img src="{% static 'img/svg_icon/5.svg' %}" alt="">
+                        </div>
+                        <h3>
+                                Design
+                        </h3>
+                        <br/>
+                        <p>Je conçois des solutions de design sur mesure, alliant créativité, innovation et fonctionnalité pour sublimer vos projets.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- service_area end  -->
+
+    <!-- gallery_area start  -->
+    <div class="gallery_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title mb-50">
+                        <h3>Mes Travaux</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10">
+                    <div class="row">
+                            <!--  element envoyer-->
+                       <div class="col-xl-6 col-lg-6 col-md-6">
+                           <a href="{% url 'work_details' selected_works.0.id %}">
+                            <div class="single_gallery">
+                                <div class="thumb">
+                                    <img src="{{ selected_works.0.image.url }}" alt="{{ selected_works.0.name }}" style="border-radius: 15px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);">
+                                </div>
+                                <div class="gallery_heading">
+                                    <span>{{ selected_works.0.type }}</span>
+                                    <a href="{% url 'work_details' selected_works.0.id %}"><h4>{{ selected_works.0.name }}</h4></a>
+                                </div>
+                            </div>
+                               </a>
+
+                               <a href="{% url 'work_details' selected_works.1.id %}">
+                            <div class="single_gallery">
+                                <div class="thumb">
+                                    <img src="{{ selected_works.1.image.url }}" alt="{{ selected_works.1.name }}" style="border-radius: 15px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);">
+                                </div>
+                                <div class="gallery_heading">
+                                    <span>{{ selected_works.1.type }}</span>
+                                    <a href="{% url 'work_details' selected_works.1.id %}"><h4>{{ selected_works.1.name }}</h4></a>
+                                </div>
+                            </div>
+                                   </a>
+                       </div>
+
+
+                        <div class="col-xl-6 col-lg-6 col-md-6">
+                            <a  href="{% url 'work_details' selected_works.2.id %}">
+                            <div class="single_gallery">
+                                <div class="thumb">
+                                    <img src="{{ selected_works.2.image.url }}" alt="{{ selected_works.2.name }}" style="border-radius: 15px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);">
+                                </div>
+                                <div class="gallery_heading">
+                                    <span>{{ selected_works.2.type }}</span>
+                                    <a href="{% url 'work_details' selected_works.2.id %}"><h4>{{ selected_works.2.name }}</h4></a>
+                                </div>
+                                </a>
+                            </div>
+
+                                <a  href="{% url 'work_details' selected_works.3.id %}">
+                            <div class="single_gallery">
+                                <div class="thumb">
+                                    <img src="{{ selected_works.3.image.url }}" alt="{{ selected_works.3.name }}" style="border-radius: 15px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);">
+                                </div>
+                                <div class="gallery_heading">
+                                    <span>{{ selected_works.3.type }}</span>
+                                    <a href="{% url 'work_details' selected_works.3.id %}"><h4>{{ selected_works.3.name }}</h4></a>
+                                </div>
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="more_works">
+                                    <a style="border-radius: 5px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);" class="boxed-btn3-line" href="{% url 'work' %}">Voir Tout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- gallery_area end  -->
+
+
+{% endblock %}
